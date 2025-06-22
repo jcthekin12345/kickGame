@@ -15,6 +15,7 @@ kick.addEventListener("click", () => {
     upgrade();
     user.kicking_exp += 1;
     xpText.innerHTML = `XP: ${user.kicking_exp}`;
+    kickStr.innerHTML = `Str: ${user.str}`
 });
 
 rst.addEventListener("click", () => {
