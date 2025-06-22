@@ -21,6 +21,7 @@ rst.addEventListener("click", () => {
     user.kicking_exp = 0;
     user.str = 0;
     xpText.innerHTML = `XP: ${user.kicking_exp}`;
+    kickStr.innerHTML = `Str: ${strength}`
 })
 
 let kicking_exp_goal = 10;
