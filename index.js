@@ -21,7 +21,7 @@ rst.addEventListener("click", () => {
     user.kicking_exp = 0;
     user.str = 0;
     xpText.innerHTML = `XP: ${user.kicking_exp}`;
-    kickStr.innerHTML = `Str: ${strength}`
+    kickStr.innerHTML = `Str: ${user.str}`
 })
 
 let kicking_exp_goal = 10;
@@ -30,7 +30,7 @@ let strength = 0;
 
 function upgrade() {
     if (user.kicking_exp >= kicking_exp_goal) {
-        strength += 1;
+        user.str += 1;
         kickStr.innerHTML = `Str: ${strength}`
         user.kicking_exp = 0;
         kicking_exp_goal *= kicking_exp_goal_multiplier;
